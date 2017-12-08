@@ -8,6 +8,8 @@
 <script>
 import axios from 'axios'
 
+var context = "" 
+
 export default {
   data () {
     return {
@@ -23,10 +25,12 @@ export default {
       this.$emit('messageSent', {
         author: 'me',
         text: this.text,
+        context: context,
         timestamp: new Date().toLocaleString()
       })
 
-      axios.post(process.env.API_URL + '/ask', { question: this.text }).then((resp) => {
+      axios.post(process.env.API_URL + '/ask', { question: this.text, context: context }).then((resp) => {
+      context = resp.data.context;
         this.$emit('messageSent', {
           author: 'bot',
           text: resp.data.answer,
