@@ -292,4 +292,4 @@ applications:
 
 ## New Release
 * Before: Current implementation doesn't support branching dialogs since it doesn't track the state of the conversation. Consult the documentation and build more complex bot: https://www.ibm.com/watson/developercloud/conversation/api/v1/
-* Now: Conversation flow works perfectly!
+* Now: Conversation flow works perfectly with branching dialogs!
