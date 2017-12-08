@@ -290,5 +290,6 @@ applications:
 * Open *Manage* tab and click *Launch tool*
 * Pause for the discussion on Conversation service. Have fun with creating new foods and kinds of responses
 
-## Additional exercises
-* Current implementation doesn't support branching dialogs since it doesn't track the state of the conversation. Consult the documentation and build more complex bot: https://www.ibm.com/watson/developercloud/conversation/api/v1/
+## New Release
+* Before: Current implementation doesn't support branching dialogs since it doesn't track the state of the conversation. Consult the documentation and build more complex bot: https://www.ibm.com/watson/developercloud/conversation/api/v1/
+* Now: Conversation flow works perfectly!
